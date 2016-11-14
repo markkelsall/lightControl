@@ -1,4 +1,4 @@
-const server = require('../expressServer/server');
+const Server = require('../expressServer/server');
 let serverConfig = {
     port: 8080,
     address: 'lightControl',
@@ -12,4 +12,4 @@ let serverConfig = {
         }
     ]
 };
-server.start(serverConfig);
+let serverReturned = new Server(serverConfig);
